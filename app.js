@@ -9,7 +9,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/hello', (req, res) => {
-    res.send('Andi')
+    let name = req.query.name;
+    res.send(name)
 })
 
 app.listen(port, () => {
